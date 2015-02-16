@@ -1,0 +1,17 @@
+geometry_msgs/PointStamped target_point  # use in case of LOOKAT
+bool keep_tracking # if FALSE, the action will succeed once the head points to the
+                   # target (for the first time)
+                   # if TRUE, the action will never succeed, but the head will keep
+                   # following the target. The action CAN be canceled though.
+
+float64 pan_vel   # If set to 0, a default will be used
+float64 tilt_vel  # If set to 0, a default will be used
+
+---
+#result definition
+bool looking_at_target
+---
+#feedback
+bool is_tracking
+float64 pan_error
+float64 tilt_error

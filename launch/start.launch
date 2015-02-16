@@ -1,0 +1,20 @@
+<launch>
+	<!-- Do mapping argument -->
+    <arg name="mapping" default="false"/> 
+
+    <!-- Do not use machine files argument -->
+    <arg name="sim" default="false"/>
+    
+    <!-- Hardware version -->
+    <arg name="hardware" default="simulation"/>
+
+    <node machine="pc2" name="gaze_controller" pkg="rose20_gaze_controller" type="gaze_controller.py" output="screen">
+        <param name = "min_pan" value="-1.576" />
+        <param name = "max_pan" value="1.576" />
+        <param name = "min_tilt" value="-1.576" />
+        <param name = "max_tilt" value="1.576" />
+        <param name = "rate" value="50" />
+    </node>
+
+ </launch>
+  
