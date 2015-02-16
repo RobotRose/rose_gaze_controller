@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 2.8.3)
-project(rose20_gaze_controller)
+project(rose_gaze_controller)
 
 ## Find catkin macros and libraries
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
@@ -85,7 +85,7 @@ generate_messages(
 ## DEPENDS: system dependencies of this project that dependent projects also need
 catkin_package(
 #  INCLUDE_DIRS include
-#  LIBRARIES rose20_gaze_controller
+#  LIBRARIES rose_gaze_controller
   CATKIN_DEPENDS actionlib actionlib_msgs geometry_msgs rospy tf tf_conversions urdf visualization_msgs message_runtime
   DEPENDS message_runtime
 )
@@ -102,19 +102,19 @@ include_directories(
 )
 
 ## Declare a cpp library
-# add_library(rose20_gaze_controller
-#   src/${PROJECT_NAME}/rose20_gaze_controller.cpp
+# add_library(rose_gaze_controller
+#   src/${PROJECT_NAME}/rose_gaze_controller.cpp
 # )
 
 ## Declare a cpp executable
-# add_executable(rose20_gaze_controller_node src/rose20_gaze_controller_node.cpp)
+# add_executable(rose_gaze_controller_node src/rose_gaze_controller_node.cpp)
 
 ## Add cmake target dependencies of the executable/library
 ## as an example, message headers may need to be generated before nodes
-# add_dependencies(rose20_gaze_controller_node rose20_gaze_controller_generate_messages_cpp)
+# add_dependencies(rose_gaze_controller_node rose_gaze_controller_generate_messages_cpp)
 
 ## Specify libraries to link a library or executable target against
-# target_link_libraries(rose20_gaze_controller_node
+# target_link_libraries(rose_gaze_controller_node
 #   ${catkin_LIBRARIES}
 # )
 
@@ -133,7 +133,7 @@ include_directories(
 # )
 
 ## Mark executables and/or libraries for installation
-# install(TARGETS rose20_gaze_controller rose20_gaze_controller_node
+# install(TARGETS rose_gaze_controller rose_gaze_controller_node
 #   ARCHIVE DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
 #   LIBRARY DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
 #   RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
@@ -158,7 +158,7 @@ include_directories(
 #############
 
 ## Add gtest based cpp test target and link libraries
-# catkin_add_gtest(${PROJECT_NAME}-test test/test_rose20_gaze_controller.cpp)
+# catkin_add_gtest(${PROJECT_NAME}-test test/test_rose_gaze_controller.cpp)
 # if(TARGET ${PROJECT_NAME}-test)
 #   target_link_libraries(${PROJECT_NAME}-test ${PROJECT_NAME})
 # endif()

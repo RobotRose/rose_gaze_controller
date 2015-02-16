@@ -1,14 +1,14 @@
 #!/usr/bin/python
 
-import roslib; roslib.load_manifest("rose20_gaze_controller")
+import roslib; roslib.load_manifest("rose_gaze_controller")
 
 import rospy
 import actionlib
 
-import rose20_gaze_controller.msg
+import rose_gaze_controller.msg
 from std_msgs.msg import Float64
 from dynamixel_msgs.msg import JointState
-from rose20_gaze_controller.msg import LookAtAction, LookAtFeedback, LookAtResult
+from rose_gaze_controller.msg import LookAtAction, LookAtFeedback, LookAtResult
 
 import tf
 from tf.transformations import euler_from_quaternion

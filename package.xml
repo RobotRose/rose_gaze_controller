@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <package>
-  <name>rose20_gaze_controller</name>
+  <name>rose_gaze_controller</name>
   <version>0.0.0</version>
-  <description>The rose20_gaze_controller package makes Rose look at some point and optionallly keeps looking at it</description>
+  <description>The rose_gaze_controller package makes Rose look at some point and optionally keeps looking at it</description>
   <maintainer email="beek@robot-rose.nl">tsr</maintainer>
   <license>BSD</license>
   <url type="website">http://www.robot-rose.nl</url>
